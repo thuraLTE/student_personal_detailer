@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Personal Detailer</string>
+    <string name="add_student_fab">Add Student Fab</string>
+    <string name="add_new_student">Add\nNew Student</string>
+    <string name="confirm">Confirm</string>
+    <string name="student_details">Student Details</string>
+</resources>

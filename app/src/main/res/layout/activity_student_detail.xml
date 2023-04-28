@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context=".ui.StudentDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingStart="10dp"
+            android:src="@drawable/ic_back_arrow"
+            app:tint="@color/dark_blue" />
+
+        <TextView
+            style="@style/ScreenTitleTextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivBack"
+            android:fontFamily="@font/maven_pro_bold"
+            android:text="@string/student_details" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relativeTitle">
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_image" />
+
+        <RelativeLayout
+            android:id="@+id/relativeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comic_neue_bold"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/comic_neue_bold"
+                android:textColor="@color/dark_blue"
+                android:textSize="24sp"
+                tools:text="Rafael Nadal" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/relativeEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comic_neue_bold"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/comic_neue_bold"
+                android:textColor="@color/dark_blue"
+                android:textSize="24sp"
+                tools:text="user@gmail.com" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/relativeNrc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comic_neue_bold"
+                android:text="NRC"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvNrc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/comic_neue_bold"
+                android:textColor="@color/dark_blue"
+                android:textSize="24sp"
+                tools:text="12/OKM(N)123456" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/relativeGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comic_neue_bold"
+                android:text="Gender"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/comic_neue_bold"
+                android:textColor="@color/dark_blue"
+                android:textSize="24sp"
+                tools:text="Male" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/relativePhNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comic_neue_bold"
+                android:text="Phone Number"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvPhNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/comic_neue_bold"
+                android:textColor="@color/dark_blue"
+                android:textSize="24sp"
+                tools:text="09-123-456-789" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
